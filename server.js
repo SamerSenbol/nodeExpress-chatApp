@@ -25,4 +25,10 @@ io.on('connection', function(socket){
   });
 });
 
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    console.log('message: ' + msg);
+  });
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
