@@ -1,0 +1,23 @@
+{
+  "name": "nodeexpress-chatapp",
+  "version": "1.0.0",
+  "description": "Creating chat app by using the node express ",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm install and then npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamerSenbol/nodeExpress-chatApp.git"
+  },
+  "author": "Samer Senbol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamerSenbol/nodeExpress-chatApp/issues"
+  },
+  "homepage": "https://github.com/SamerSenbol/nodeExpress-chatApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
