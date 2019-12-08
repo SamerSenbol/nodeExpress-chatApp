@@ -6,16 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     
   </head>
   <body>
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
-    <script src="./script.js"></script>
-</body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">
+            <h3>Online Users</h3>
+            <ul class ="list-group" id="users"></ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="chat" id="chat"></div>
+          <form id="messageForm">
+            <div class="form-group">
+              <label> Enter Message</label>
+              <textarea class="form-control" id="message"></textarea>
+              <input type="submit" class="btn btn-primary" value="Send Message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>
