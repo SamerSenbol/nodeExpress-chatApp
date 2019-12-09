@@ -1,12 +1,13 @@
-const express = require('express')
-const app = express()
-var http = require('http').createServer(app);
-var io = require('socket.io')(http);
-
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var io = require('socket.io').listen(server);
 users = [];
 connections = [];
 
-app.use(express.static('public'))
+server.listen(process.env.PORT || 3000);
+console.log('server running');
+app.use(express.static('public'));
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
@@ -17,19 +18,13 @@ io.sockets.on("connection",function(socket){
   console.log('Connected: %s sockets connected',connections.length);
 
   //Disconnect
-  socket.on('disconnect',function(data){
+  socket.on('disconnect', function(data){
   connections.splice(connections.indexOf(socket),1);
   console.log('Disconnected: %s sockets connected',connections.length);
-});
+  });
+
   //Send Message
   socket.on('send message', function(data){
-    io.sockets.emit('new message',{msg: data});
-  
+  io.sockets.emit('new message',{msg: data});
   });
 });
-
-http.listen(3000, function(){
-  console.log('listening on *:3000');
-});
-
-console.log('server running');

@@ -6,7 +6,7 @@ $(function (){
 
   $messageForm.submit(function(e){
     e.preventDefault();
-    socket.emit('send message', $message.val(''));
+    socket.emit('send message', $message.val());
     $message.val('');
   });
 
