@@ -1,4 +1,13 @@
-* { 
+body{
+
+  margin-top:30px;
+}
+#messageArea{
+
+  display: none;
+}
+
+/* * { 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
@@ -35,4 +44,4 @@ body {
     }
       #messages li:nth-child(odd) {
         background: #eee; 
-    }
+    } */
