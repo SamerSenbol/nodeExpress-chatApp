@@ -27,7 +27,19 @@ io.sockets.on("connection",function(socket){
 
   //Send Message
   socket.on('send message', function(data){
-  io.sockets.emit('new message',{msg: data, user: socket.username});
+
+    
+    io.sockets.emit('new message',{msg: data, user: socket.username});
+
+  // Check if message is "/dance"
+/* 
+  if(message === "/danse"){
+    io.to(user.room).emit('message', { user: user.name, text:"is dansening"});
+  }
+  else{
+    
+    io.to(user.room).emit('message', { user: user.name, text: message });
+  } */
 });
 
   // New User
