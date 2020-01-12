@@ -11,6 +11,7 @@ This is my first chatt app I have created by: **websocket**.
 3- On port **http://localhost:3000/** you could run the app. 
 
 **Note:**
+
 In the Terminal you will get **server running** message and you will be able to see how many connection do you have.
 
 When you enter name in the field and login you would be see that you have 1 connection in the terminal,
