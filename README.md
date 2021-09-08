@@ -1,6 +1,10 @@
 **NODE-EXPRESS-CHAT-APP**
 
-This is my first chatt app I have created by: **websocket**.
+I made this app just for practicing **node express framework and websocket protocol**
+
+I've done it by folowing a video from **traversy media youtube channel** link below:
+https://www.youtube.com/watch?v=tHbCkikFfDE
+
 
 **For starting the app:**
 
@@ -22,6 +26,5 @@ so when send a message from each of them it would be show for both of them,
 and if you write **/happy** in the chat app input field you will have an happy man in both chat message area.
 
 
-**My github link:**
-
-https://github.com/SamerSenbol/nodeExpress-chatApp
+**Link for testing app:**
+https://node-express-chatapp.herokuapp.com/
