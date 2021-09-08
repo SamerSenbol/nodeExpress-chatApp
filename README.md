@@ -2,7 +2,8 @@
 
 I made this app just for practicing **node express framework and websocket protocol**
 
-I've done it by folowing a video from **traversy media youtube channel** link below:
+I've done it by folowing a video from **traversy media youtube channel** link:
+
 https://www.youtube.com/watch?v=tHbCkikFfDE
 
 
@@ -27,4 +28,5 @@ and if you write **/happy** in the chat app input field you will have an happy m
 
 
 **Link for testing app:**
+
 https://node-express-chatapp.herokuapp.com/
